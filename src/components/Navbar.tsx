@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import logo from "../assets/logo.jpg";
 
 const Navbar: React.FC = () => {
   return (
     <header
       style={{
-        backgroundColor: "#ffffff",
         boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-        padding: "0.8rem 2rem",
+        padding: "0.5rem 2rem",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -33,9 +33,10 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <img
-            src="https://static.fotocasa.es/images/client/5a8c4671-8c44-468e-85b7-7c68247ff80c/20221103095211.jpeg?rule=original"
+            src={logo
+            }
             alt="Logo Inmobiliaria"
-            style={{display:"flex", height: "80px", alignContent:"center" }}
+            style={{ display: "flex", height: "60px", alignContent: "center" }}
           />
         </div>
 
@@ -55,7 +56,7 @@ const Navbar: React.FC = () => {
                 to="/"
                 style={{
                   textDecoration: "none",
-                  color: "#333",
+                  color: "#ffffffff",
                   fontWeight: 500,
                 }}
               >
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
                 to="/servicios"
                 style={{
                   textDecoration: "none",
-                  color: "#333",
+                  color: "#ffffffff",
                   fontWeight: 500,
                 }}
               >
@@ -79,7 +80,7 @@ const Navbar: React.FC = () => {
                 to="/diferencias"
                 style={{
                   textDecoration: "none",
-                  color: "#333",
+                  color: "#ffffffff",
                   fontWeight: 500,
                 }}
               >
@@ -88,10 +89,22 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
+                to="/sobreNosotros"
+                style={{
+                  textDecoration: "none",
+                  color: "#ffffffff",
+                  fontWeight: 500,
+                }}
+              >
+                Nuestro equipo
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contacto"
                 style={{
                   textDecoration: "none",
-                  color: "#333",
+                  color: "#ffffffff",
                   fontWeight: 500,
                 }}
               >
@@ -101,49 +114,6 @@ const Navbar: React.FC = () => {
           </ul>
         </nav>
 
-        {/* Botones de idioma */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            marginLeft: "1rem", // mismo margen visual que el padding del header
-          }}
-        >
-          {/* Bandera España */}
-          <button
-            onClick={() => console.log("Idioma: Español")}
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              padding: 0,
-            }}
-          >
-            <img
-              src="https://flagcdn.com/w20/es.png"
-              alt="Español"
-              style={{  width: "40px", height: "25px", borderRadius: "2px" }}
-            />
-          </button>
-
-          {/* Bandera Reino Unido */}
-          <button
-            onClick={() => console.log("Idioma: Inglés")}
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              padding: 0,
-            }}
-          >
-            <img
-              src="https://flagcdn.com/w20/gb.png"
-              alt="English"
-              style={{ width: "40px", height: "25px", borderRadius: "2px" }}
-            />
-          </button>
-        </div>
       </div>
     </header>
   );

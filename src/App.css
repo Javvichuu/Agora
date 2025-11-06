@@ -1,3 +1,24 @@
+.background {
+  position: absolute;
+  inset: 0;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Capa oscura semitransparente encima del fondo */
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia el 0.4 por más/menos opacidad */
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +61,28 @@
 .read-the-docs {
   color: #888;
 }
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  text-align: left;
+  color: white;
+  
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+}
+
+
