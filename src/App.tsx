@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import AcercaDe from "./components/AcercaDe/AcercaDe";
 import "./App.css"; // Asegúrate de tener este import
 
 const App: React.FC = () => {
@@ -25,6 +26,10 @@ su nuevo hogar y a empezar su nueva vida. Trabajamos en Valencia y provincia</p>
           </Routes>
         </main>
       </div>
+      <h1 className="descripcion">Inmobiliaria Agora</h1>
+          <p className="descripcion">Empresa comprometida en ayudar a las personas a construir su futuro, a crear
+su nuevo hogar y a empezar su nueva vida. Trabajamos en Valencia y provincia</p>
+            <AcercaDe/>
     </div>
   );
 };

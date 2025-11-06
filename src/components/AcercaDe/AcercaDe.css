@@ -1,0 +1,93 @@
+/* Sección general debajo del hero */
+/* En tu AcercaDe.css */
+.acerca-section {
+  width: 100vw; /* ocupa todo el ancho de la ventana */
+  margin-left: calc(50% - 50vw); /* truco para ignorar el padding del #root */
+  background-color: #ada5a5;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Contenedor interno */
+.acerca-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .acerca-container {
+    flex-direction: row;
+  }
+}
+
+/* Bloque de texto */
+.acerca-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+
+.acerca-titulo {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #b263c6;
+}
+
+.acerca-descripcion {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 90%;
+}
+
+/* Imagen */
+.acerca-imagen {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acerca-imagen img {
+  width: 96%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.acerca-imagen img:hover {
+  transform: scale(1.03);
+}
+
+/* Pequeña animación al aparecer (scroll reveal feeling) */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.acerca-section {
+  animation: fadeUp 1s ease forwards;
+}

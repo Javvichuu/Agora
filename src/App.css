@@ -12,7 +12,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Cambia el 0.4 por más/menos opacidad */
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el 0.4 por más/menos opacidad */
 }
 
 .content {
