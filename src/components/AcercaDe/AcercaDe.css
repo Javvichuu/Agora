@@ -1,9 +1,11 @@
-/* Sección general debajo del hero */
-/* En tu AcercaDe.css */
+/* SECCIÓN ACERCA */
 .acerca-section {
   width: 100vw; /* ocupa todo el ancho de la ventana */
   margin-left: calc(50% - 50vw); /* truco para ignorar el padding del #root */
-  background-color: #ada5a5;
+
+  /* Fondo degradado entre blanco, gris oscuro y morado */
+  background: linear-gradient(135deg, #f3e8fa 0%, #ffffff 40%, #edd5fd 100%);
+  
   padding: 6rem 2rem;
   display: flex;
   justify-content: center;
@@ -11,8 +13,10 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-}
 
+  /* Animación de entrada */
+  animation: fadeUp 1s ease forwards;
+}
 
 /* Contenedor interno */
 .acerca-container {
@@ -20,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 10rem;
   max-width: 1100px;
   width: 100%;
 }
@@ -42,41 +46,34 @@
 }
 
 .acerca-titulo {
-  font-size: 2.3rem;
-  font-weight: 600;
-  color: #b263c6;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #a313db; /* tono más brillante del púrpura */
+  text-shadow: 0 2px 6px rgba(172, 161, 177, 0.6); /* sombra sutil para dar profundidad */
+  letter-spacing: 1px; /* mejora la lectura */
 }
 
 .acerca-descripcion {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-  max-width: 90%;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-family: 'Georgia', serif;
+  text-align: justify;
+  color: #000000; /* texto negro para contraste sobre fondo claro */
+  max-width: 100%;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* sombra más suave */
 }
 
-/* Imagen */
 .acerca-imagen {
-  flex: 0.5;
+  flex: 0.6;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.acerca-imagen img {
-  width: 96%;
-  max-width: 480px;
-  height: auto;
   border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.4s ease;
+  padding: 6px;
 }
 
-.acerca-imagen img:hover {
-  transform: scale(1.03);
-}
+.acerca-imagen img { width: 120%; height: 90%; border-radius: 20px; object-fit: cover; border: 1px solid #a313db; /* Borde morado brillante */ box-shadow: 0 10px 25px rgba(163, 19, 219, 0.3); /* Luz morada sutil */ transition: transform 0.4s ease, box-shadow 0.4s ease; } .acerca-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
 
-/* Pequeña animación al aparecer (scroll reveal feeling) */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -86,8 +83,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.acerca-section {
-  animation: fadeUp 1s ease forwards;
 }

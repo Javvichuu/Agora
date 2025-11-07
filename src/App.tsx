@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <div className="content">
         <Navbar />
         <section className="hero-text">
-          <h1 className="hero-title">Bienvenido a Agora</h1>
+          <h1 className="hero-title">Inmobiliaria Ágora</h1>
           <p className="hero-subtitle">Empresa comprometida en ayudar a las personas a construir su futuro, a crear
 su nuevo hogar y a empezar su nueva vida. Trabajamos en Valencia y provincia</p>
         </section>
@@ -26,9 +26,7 @@ su nuevo hogar y a empezar su nueva vida. Trabajamos en Valencia y provincia</p>
           </Routes>
         </main>
       </div>
-      <h1 className="descripcion">Inmobiliaria Agora</h1>
-          <p className="descripcion">Empresa comprometida en ayudar a las personas a construir su futuro, a crear
-su nuevo hogar y a empezar su nueva vida. Trabajamos en Valencia y provincia</p>
+
             <AcercaDe/>
     </div>
   );

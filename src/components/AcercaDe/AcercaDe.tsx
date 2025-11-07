@@ -8,15 +8,11 @@ const AcercaDe: React.FC = () => {
       <div className="acerca-container">
         {/* Texto */}
         <div className="acerca-texto">
-          <h2 className="acerca-titulo">Como surgió Ágora?</h2>
+          <h2 className="acerca-titulo">Cómo trabajamos</h2>
           <p className="acerca-descripcion">
-            Inmobiliaria Ágora surgió de un pensamiento de una gran amistad y de un punto clave que dio el empujón a hacer realidad esto 
-            que tanto tiempo habíamos imaginado.
-          </p>
-          <p className="acerca-descripcion">
-           Te preguntarás ¿y por qué nosotros? Por qué lo más importante para que algo como inmobiliaria Ágora funcione es tener un 
-           buen equipo y nosotros podemos presumir del gran equipo que formamos, la positividad, el respeto, trabajar unidos, 
-           la comunicación, mejores amigos y por supuesto la diversión, todos estos puntos son clave para que algo así funcione.
+           En nuestra empresa utilizamos tecnología de vanguardia para optimizar y fortalecer continuamente la calidad de 
+           nuestros servicios. Somos una organización moderna, dinámica y plenamente adaptada a las exigencias del entorno 
+           actual, lo que nos permite ofrecer a nuestros clientes soluciones innovadoras, eficientes y orientadas a resultados. Nuestro compromiso con la excelencia y la innovación nos impulsa a mantenernos a la vanguardia del sector, garantizando así un servicio de alto nivel y un acompañamiento profesional en cada proyecto.
           </p>
 
         </div>
