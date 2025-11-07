@@ -87,5 +87,54 @@
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   max-width: 700px;
 }
+.sections-container {
+  width: 100vw; 
+  margin-left: calc(50% - 50vw); 
+  overflow: hidden;
+}
+
+
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fondos */
+.section-gray {
+ background: linear-gradient(135deg, #edd5fd 0%, #d3d2d2 40%, #dcd2e0 100%);
+}
+
+.section-white {
+  background-color: #ffffff;
+}
+
+/* === FORMAS === */
+
+/* Primer bloque: línea superior recta, borde inferior diagonal */
+.start-flat {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+/* Bloque del medio: diagonal arriba y abajo */
+.diagonal {
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+/* Último bloque: diagonal arriba, borde inferior recto */
+.end-flat {
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Contenido centrado */
+.section-inner {
+  width: 90%;
+  max-width: 1400px;
+  padding: 4rem 2rem;
+  z-index: 1;
+}
 
 

@@ -1,8 +1,10 @@
-/* SECCIÓN ACERCA */
-.acerca-section {
+/* SECCIÓN elijenos */
+.elijenos-section {
   width: 100vw; /* ocupa todo el ancho de la ventana */
   margin-left: calc(50% - 50vw); /* truco para ignorar el padding del #root */
 
+  /* Fondo degradado entre blanco, gris oscuro y morado */
+  
   
   padding: 6rem 2rem;
   display: flex;
@@ -17,7 +19,7 @@
 }
 
 /* Contenedor interno */
-.acerca-container {
+.elijenos-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,13 +30,13 @@
 }
 
 @media (min-width: 900px) {
-  .acerca-container {
+  .elijenos-container {
     flex-direction: row;
   }
 }
 
 /* Bloque de texto */
-.acerca-texto {
+.elijenos-texto {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -43,7 +45,7 @@
   padding-right: 1rem;
 }
 
-.acerca-titulo {
+.elijenos-titulo {
   font-size: 2.5rem;
   font-weight: 800;
   color: #a313db; /* tono más brillante del púrpura */
@@ -51,7 +53,7 @@
   letter-spacing: 1px; /* mejora la lectura */
 }
 
-.acerca-descripcion {
+.elijenos-descripcion {
   font-size: 1.25rem;
   line-height: 1.8;
   font-family: 'Georgia', serif;
@@ -61,7 +63,7 @@
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* sombra más suave */
 }
 
-.acerca-imagen {
+.elijenos-imagen {
   flex: 0.6;
   display: flex;
   justify-content: center;
@@ -70,7 +72,7 @@
   padding: 6px;
 }
 
-.acerca-imagen img { width: 120%; height: 90%; border-radius: 20px; object-fit: cover; border: 1px solid #a313db; /* Borde morado brillante */ box-shadow: 0 10px 25px rgba(163, 19, 219, 0.3); /* Luz morada sutil */ transition: transform 0.4s ease, box-shadow 0.4s ease; } .acerca-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
+.elijenos-imagen img { width: 120%; height: 90%; border-radius: 20px; object-fit: cover; border: 1px solid #a313db; /* Borde morado brillante */ box-shadow: 0 10px 25px rgba(163, 19, 219, 0.3); /* Luz morada sutil */ transition: transform 0.4s ease, box-shadow 0.4s ease; } .elijenos-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
 
 @keyframes fadeUp {
   from {
