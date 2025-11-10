@@ -30,14 +30,14 @@ const App: React.FC = () => {
   {/* Sección 1 */}
   <section className="section section-gray start-flat">
     <div className="section-inner">
-      <AcercaDe />
+      <PorQueElegirnos />
     </div>
   </section>
 
   {/* Sección 2 */}
   <section className="section section-white diagonal">
     <div className="section-inner">
-      <PorQueElegirnos />
+      <AcercaDe />
     </div>
   </section>
 

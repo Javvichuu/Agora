@@ -6,18 +6,25 @@ const AcercaDe: React.FC = () => {
   return (
     <section className="acerca-section">
       <div className="acerca-container">
-        {/* Texto */}
-        <div className="acerca-texto">
-          <h2 className="acerca-titulo">Cómo trabajamos</h2>
-          <p className="acerca-descripcion">
-           En nuestra empresa utilizamos tecnología de vanguardia para optimizar y fortalecer continuamente la calidad de 
-           nuestros servicios. Somos una organización moderna, dinámica y plenamente adaptada a las exigencias del entorno 
-           actual, lo que nos permite ofrecer a nuestros clientes soluciones innovadoras, eficientes y orientadas a resultados. Nuestro compromiso con la excelencia y la innovación nos impulsa a mantenernos a la vanguardia del sector, garantizando así un servicio de alto nivel y un acompañamiento profesional en cada proyecto.
-          </p>
-
-        </div>
         <div className="acerca-imagen">
           <img src={acercaDe} alt="Team collaboration" />
+        </div>
+        {/* Texto */}
+        <div className="acerca-texto">
+          <h2 className="acerca-titulo">Somos tu inmobiliaria de confianza</h2>
+          <p className="acerca-descripcion">
+           Nuestros clientes nos contratan para que pongamos lo mejor de nosotros mismos. Nuestra experiencia, nuestro marketing, nuestra capacidad de negociación, 
+           nuestras herramientas, nuestros conocimientos del mercado inmobiliario, nuestra actitud, pero sobre todo nuestro corazón. El mundo lo han cambiado soñadores 
+           como nosotros, y desde la marca Ágora Inmobiliaria y todos los que la formamos, hemos cambiado la forma de entender el mundo inmobiliario. La combinación de un 
+           excelente equipo y los sistemas de trabajo más avanzados, permiten asesorar al cliente desde el inicio hasta el fin de la operación.
+          
+          <br/><br/>
+            Disponemos de un equipo dinámico y experimentado, que le ofrecerá un servicio personalizado según sus prioridades y necesidades.
+          
+          <br/><br/>
+            En Ágora Inmobiliaria le brindamos la oportunidad de adquirir su inmueble en las mejores condiciones del mercado, así como asesorarle a la hora de hacer una inversión como la compra de un inmueble porque sabemos lo importante que es para usted. No dude en visitarnos le atenderemos de una manera seria y rápida. 
+          </p>
+
         </div>
       </div>
     </section>

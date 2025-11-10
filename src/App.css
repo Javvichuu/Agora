@@ -105,7 +105,8 @@
 
 /* Fondos */
 .section-gray {
- background: linear-gradient(135deg, #edd5fd 0%, #d3d2d2 40%, #dcd2e0 100%);
+  background: linear-gradient(135deg, #eacaff 0%, #d3d2d2 40%, #efcffc 100%);
+  background-color: #e4bcff; /* capa sólida base */
 }
 
 .section-white {
@@ -116,17 +117,17 @@
 
 /* Primer bloque: línea superior recta, borde inferior diagonal */
 .start-flat {
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
-/* Bloque del medio: diagonal arriba y abajo */
+/* Bloque del medio: diagonal arriba y abajo que encaja con los otros */
 .diagonal {
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 }
 
 /* Último bloque: diagonal arriba, borde inferior recto */
 .end-flat {
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
 }
 
 /* Contenido centrado */

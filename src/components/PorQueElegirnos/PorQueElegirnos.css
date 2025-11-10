@@ -1,86 +1,119 @@
-/* SECCIÓN elijenos */
-.elijenos-section {
-  width: 100vw; /* ocupa todo el ancho de la ventana */
-  margin-left: calc(50% - 50vw); /* truco para ignorar el padding del #root */
+/* === SECCIÓN "POR QUÉ ELEGIRNOS" === */
 
-  /* Fondo degradado entre blanco, gris oscuro y morado */
-  
-  
-  padding: 6rem 2rem;
+.elijenos-section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6rem 2rem;
+flex-direction: row;
   box-sizing: border-box;
-  position: relative;
-  z-index: 1;
-
-  /* Animación de entrada */
-  animation: fadeUp 1s ease forwards;
 }
 
-/* Contenedor interno */
 .elijenos-container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.elijenos-subContainer {
+  flex: 2.5;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 10rem;
-  max-width: 1100px;
-  width: 100%;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+
+}
+.elijenos-containerTitulo {
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+}
+.elijenos-containerTexto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+
 }
 
 @media (min-width: 900px) {
   .elijenos-container {
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6rem;
   }
 }
 
-/* Bloque de texto */
-.elijenos-texto {
-  flex: 1;
+/* === Imagen izquierda === */
+.elijenos-imagen {
+  flex: 2;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
-  padding-right: 1rem;
+  align-items: flex-start;
+}
+.elijenos-imagen img { width: 120%; height: 90%; border-radius: 20px; object-fit: cover; border: 1px solid #a313db; /* Borde morado brillante */ box-shadow: 0 10px 25px rgba(163, 19, 219, 0.3); /* Luz morada sutil */ transition: transform 0.4s ease, box-shadow 0.4s ease; } .acerca-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
+
+
+.elijenos-imagen img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.elijenos-titulo {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #a313db; /* tono más brillante del púrpura */
-  text-shadow: 0 2px 6px rgba(172, 161, 177, 0.6); /* sombra sutil para dar profundidad */
-  letter-spacing: 1px; /* mejora la lectura */
+/* === Texto derecha === */
+.elijenos-texto {
+  flex: 1;
+  justify-content: flex-start;
+  color: #000;
+
 }
 
 .elijenos-descripcion {
-  font-size: 1.25rem;
-  line-height: 1.8;
+  font-size: 1.2rem;
+  line-height: 1.3;
   font-family: 'Georgia', serif;
-  text-align: justify;
+  text-align: left;
   color: #000000; /* texto negro para contraste sobre fondo claro */
   max-width: 100%;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* sombra más suave */
 }
 
-.elijenos-imagen {
-  flex: 0.6;
+.elijenos-titulo {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #b516ff;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  max-width: 90%;
+}
+
+/* === Bloque de párrafos === */
+.elijenos-parrafos {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  padding: 6px;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.elijenos-imagen img { width: 120%; height: 90%; border-radius: 20px; object-fit: cover; border: 1px solid #a313db; /* Borde morado brillante */ box-shadow: 0 10px 25px rgba(163, 19, 219, 0.3); /* Luz morada sutil */ transition: transform 0.4s ease, box-shadow 0.4s ease; } .elijenos-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.elijenos-parrafos p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #000000;
+  text-align: justify;
+  font-family: "Georgia", serif;
+  margin: 0;
 }
+
+
