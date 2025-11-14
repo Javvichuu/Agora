@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import AcercaDe from "./components/AcercaDe/AcercaDe";
 import PorQueElegirnos from "./components/PorQueElegirnos/PorQueElegirnos";
+import Estadisticas from "./components/Estadisticas/Estadisticas";
 
 import "./App.css"; // Asegúrate de tener este import
 
@@ -27,6 +28,9 @@ const App: React.FC = () => {
         </main>
       </div>
 
+      <div className="divider"/>
+        <Estadisticas/>
+        <div className="divider"/>
       <div className="sections-container">
 
         <section className="section section-gray start-flat">
@@ -42,8 +46,6 @@ const App: React.FC = () => {
         </section>
       </div>
 
-      <div className="divider"></div>
-      
     </div>
   );
 };
