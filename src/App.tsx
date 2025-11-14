@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import AcercaDe from "./components/AcercaDe/AcercaDe";
 import PorQueElegirnos from "./components/PorQueElegirnos/PorQueElegirnos";
 import Estadisticas from "./components/Estadisticas/Estadisticas";
-
+import Acoording from "./components/Acoording/Acoording";
 import "./App.css"; // Asegúrate de tener este import
 
 const App: React.FC = () => {
@@ -45,7 +45,9 @@ const App: React.FC = () => {
           </div>
         </section>
       </div>
-
+      <div>
+        <Acoording/>
+      </div>
     </div>
   );
 };
