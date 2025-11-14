@@ -26,28 +26,24 @@ const App: React.FC = () => {
           </Routes>
         </main>
       </div>
-<div className="sections-container">
-  {/* Sección 1 */}
-  <section className="section section-gray start-flat">
-    <div className="section-inner">
-      <PorQueElegirnos />
-    </div>
-  </section>
 
-  {/* Sección 2 */}
-  <section className="section section-white diagonal">
-    <div className="section-inner">
-      <AcercaDe />
-    </div>
-  </section>
+      <div className="sections-container">
 
-  {/* Sección 3 */}
-  <section className="section section-gray end-flat">
-    <div className="section-inner">
-      <AcercaDe />
-    </div>
-  </section>
-</div>
+        <section className="section section-gray start-flat">
+          <div className="section-inner">
+            <PorQueElegirnos />
+          </div>
+        </section>
+
+        <section className="section section-white end-flat">
+          <div className="section-inner">
+            <AcercaDe />
+          </div>
+        </section>
+      </div>
+
+      <div className="divider"></div>
+      
     </div>
   );
 };

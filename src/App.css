@@ -120,11 +120,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
-/* Bloque del medio: diagonal arriba y abajo que encaja con los otros */
-.diagonal {
-  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
-}
-
 /* Último bloque: diagonal arriba, borde inferior recto */
 .end-flat {
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
@@ -137,5 +132,19 @@
   padding: 4rem 2rem;
   z-index: 1;
 }
+
+.divider {
+  height: 6px;
+  width: 100%;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(138, 43, 226, 0.9),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
 
 
