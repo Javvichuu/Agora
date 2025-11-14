@@ -6,18 +6,15 @@ const Navbar: React.FC = () => {
   return (
     <header
       style={{
-        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-        padding: "0.5rem 2rem",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         position: "sticky",
         top: 0,
-        width: "100vw",
+        width: "100%",
         height: "4vw",
         left: 0,
         boxSizing: "border-box",
         zIndex: 1000,
+        
       }}
     >
       {/* Contenedor interior */}
@@ -25,9 +22,7 @@ const Navbar: React.FC = () => {
         style={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
           width: "100%",
-          maxWidth: "1200px",
         }}
       >
         {/* Logo */}
