@@ -106,8 +106,8 @@
 
 /* Fondos */
 .section-gray {
-  background: linear-gradient(135deg, #eacaff 0%, #d3d2d2 40%, #efcffc 100%);
   background-color: #e4bcff; /* capa sólida base */
+  background: linear-gradient(135deg, #eacaff 0%, #d3d2d2 40%, #efcffc 100%);
 }
 
 .section-white {
