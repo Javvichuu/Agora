@@ -45,7 +45,7 @@ const App: React.FC = () => {
           </div>
         </section>
       </div>
-      <div>
+      <div className="sections-container">
         <Acoording/>
       </div>
     </div>
