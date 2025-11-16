@@ -8,7 +8,7 @@ import "./App.css"; // Asegúrate de tener este import
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen">
+    <div >
       <div className="background" />
       {/* Contenido por encima del fondo */}
       <div className="content">

@@ -5,15 +5,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: azure;
+   /* background: linear-gradient(135deg, #c9c9c9 0%, #ffffff 40%, #a89e9e 100%); */
+   background-color: #ffffff;
 }
 
 /* TÍTULO */
 .accordion-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 2rem;
   color: #222;
+}
+.accordion-texto {
+  font-size: 1.1rem;
+  margin-bottom: 5rem;
+  color: #222;
+}
+.accordion-textoMorado {
+  font-size: 1.2rem;
+  color: #c300ff;
 }
 
 /* GRID 2 FILAS x 5 COLUMNA */
@@ -23,6 +32,7 @@
   gap: 1.5rem;
   width: 100%;
   max-width: 1100px;
+  height: 90%;
 }
 
 /* TARJETA */
@@ -42,12 +52,9 @@
 
 /* BOTÓN PREGUNTA */
 .accordion-question {
-  background: none;
-  border: none;
   width: 100%;
   text-align: left;
-  font-size: 1.1rem;  /* ligeramente más grande */
-  font-weight: bold;
+  font-size: 1.2rem;  /* ligeramente más grande */
   color: #000;
   display: flex;
   justify-content: space-between;
@@ -55,7 +62,8 @@
   cursor: pointer;
   /* aumenta el padding vertical */
   transition: color 0.3s ease;
-  min-height: 20px;   /* altura mínima para dar más espacio */
+  min-height: 30px;   /* altura mínima para dar más espacio */
+  
 }
 
 
@@ -71,7 +79,7 @@
 
 /* FLECHA */
 .arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.9s ease;
 }
 
 .arrow.open {
@@ -83,10 +91,11 @@
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.8rem;
   color: #333;
   transition: all 0.3s ease;
+  text-align: justify;
 }
 
 /* RESPUESTA VISIBLE */
