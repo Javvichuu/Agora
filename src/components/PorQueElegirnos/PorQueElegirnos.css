@@ -63,6 +63,7 @@ flex-direction: row;
 }
 .elijenos-imagen img { width: 120%; height: 90%; border-radius: 20px; object-fit: cover; border: 1px solid #a313db; /* Borde morado brillante */ box-shadow: 0 10px 25px rgba(163, 19, 219, 0.3); /* Luz morada sutil */ transition: transform 0.4s ease, box-shadow 0.4s ease; } .acerca-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
 
+.elijenos-imagen img:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(163, 19, 219, 0.5); }
 
 .elijenos-imagen img {
   width: 100%;
@@ -72,6 +73,7 @@ flex-direction: row;
   object-fit: cover;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 /* === Texto derecha === */
 .elijenos-texto {
