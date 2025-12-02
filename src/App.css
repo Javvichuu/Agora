@@ -1,6 +1,25 @@
+/* ===== RESET DE MÁRGENES Y ANCHOS ===== */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.app-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
 .background {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('./assets/background.jpg');
   background-size: cover;
   background-position: center;
@@ -18,17 +37,20 @@
 .content {
   position: relative;
   z-index: 10;
-  min-height: 90vh;    /* mantiene el fondo */
+  min-height: 100vh; /* Cambiado a 100vh */
   display: flex;
   flex-direction: column;
+  padding-top: 70px; /* ¡IMPORTANTE! Compensa la altura del navbar */
 }
 
-/* === HERO CENTRADO SIN ABSOLUTE === */
+/* ===== HERO MEJORADO ===== */
 .hero-container {
-  flex: 1;                     /* ocupa el espacio disponible */
+  flex: 1;
   display: flex;
-  align-items: center;  
-  margin-bottom: 100px;       /* centra verticalmente */      /* alinea a la izquierda */
+  align-items: center;
+  padding-left: 2rem;
+  margin-bottom: 100px;
+  margin-left: 150px;
 }
 
 /* Texto del hero */
@@ -36,6 +58,7 @@
   text-align: left;
   color: white;
   max-width: 700px;
+  width: 100%;
 }
 
 .hero-title {
@@ -51,56 +74,12 @@
   opacity: 0.9;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   max-width: 700px;
+  line-height: 1.6;
 }
 
-#root {
-  max-width: 1700px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888888;
-}
-
-/* ==== SECCIONES ==== */
-
+/* ===== SECCIONES ===== */
 .sections-container {
-  width: 99.5vw; 
-  margin-left: calc(50% - 50vw); 
+  width: 100%;
   overflow: hidden;
 }
 
@@ -136,6 +115,7 @@
   width: 90%;
   max-width: 1400px;
   padding: 4rem 2rem;
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -152,3 +132,64 @@
   margin: 2rem 0;
 }
 
+/* ===== ESTILOS PARA EL COMPONENTE ACOORDING ===== */
+.acordion-container {
+  width: 100%;
+  background: white;
+
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .content {
+    padding-top: 60px; /* Ajuste para móvil */
+  }
+  
+  .hero-container {
+    padding-left: 1.5rem;
+    margin-bottom: 60px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .section-inner {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px; /* navbar más pequeño en móvil */
+  }
+  
+  .navbar-nav ul {
+    gap: 1rem; /* menos espacio entre enlaces */
+  }
+  
+  .navbar-nav li a {
+    font-size: 1rem; /* texto más pequeño */
+  }
+  
+  .content {
+    padding-top: 60px;
+  }
+  
+  .hero-container {
+    padding-left: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
