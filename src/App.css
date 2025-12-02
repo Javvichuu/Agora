@@ -12,19 +12,51 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Cambia el 0.4 por más/menos opacidad */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content {
   position: relative;
   z-index: 10;
-  margin-bottom: 60px;
+  min-height: 90vh;    /* mantiene el fondo */
+  display: flex;
+  flex-direction: column;
 }
+
+/* === HERO CENTRADO SIN ABSOLUTE === */
+.hero-container {
+  flex: 1;                     /* ocupa el espacio disponible */
+  display: flex;
+  align-items: center;  
+  margin-bottom: 100px;       /* centra verticalmente */      /* alinea a la izquierda */
+}
+
+/* Texto del hero */
+.hero-text {
+  text-align: left;
+  color: white;
+  max-width: 700px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+}
+
 #root {
   max-width: 1700px;
   margin: 0 auto;
   padding: 2rem;
-  
   text-align: center;
 }
 
@@ -63,32 +95,14 @@
 .read-the-docs {
   color: #888888;
 }
-.hero-text {
-  text-align: left;
-  color: rgb(255, 255, 255);
-  
-}
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-}
+/* ==== SECCIONES ==== */
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 400;
-  opacity: 0.9;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-  max-width: 700px;
-}
 .sections-container {
   width: 99.5vw; 
   margin-left: calc(50% - 50vw); 
   overflow: hidden;
 }
-
 
 .section {
   position: relative;
@@ -101,7 +115,7 @@
 
 /* Fondos */
 .section-gray {
-  background-color: #e4bcff; /* capa sólida base */
+  background-color: #e4bcff;
   background: linear-gradient(135deg, #eacaff 0%, #d3d2d2 40%, #efcffc 100%);
 }
 
@@ -109,8 +123,7 @@
   background-color: #ffffff;
 }
 
-/* === FORMAS === */
-
+/* Formas */
 .start-flat {
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
@@ -118,7 +131,6 @@
 .end-flat {
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
 }
-
 
 .section-inner {
   width: 90%;
@@ -139,6 +151,4 @@
   );
   margin: 2rem 0;
 }
-
-
 
